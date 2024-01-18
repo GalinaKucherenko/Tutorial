@@ -575,17 +575,12 @@ img {
 .modal-close-btn {
     margin-left: auto;
     position: absolute;
+    background-color: transparent;
     top: 24px;
     right: 24px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #424042;
-    background-color: #ECEDED;
-    border-radius: 50%;
     padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 .modal-title {
     width: 298px;
@@ -593,14 +588,25 @@ img {
     margin-bottom: 42px;
     
 }
+.modal-field {
+    margin-bottom: 18px;
+}
 .modal-input {
     width: 100%;
     height: 68px;
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
-    margin-bottom: 18px;
     background-color: transparent;
+    color: #111;
+    padding-left: 62px;
+    outline: transparent;
+}
+.modal-input:focus {
+    border-color: #FD9222;
+}
+.modal-input:focus + .svg-modal-icon {
+    stroke: #FD9222;
 }
 .label {
     color: rgba(64, 64, 64, 0.30);
@@ -608,4 +614,15 @@ img {
     font-size: 14px;
     line-height: normal;
     letter-spacing: -0.02em;
+}
+.modal-input-wrap {
+    position: relative;
+}
+.svg-modal-icon {
+    fill: transparent;
+    stroke: #404040;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
 }

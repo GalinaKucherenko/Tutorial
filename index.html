@@ -291,20 +291,31 @@
     </footer>
     <div class="backdrop">
       <div class="modal">
-        <button type="button" class="modal-close-btn">X</button>
+        <button type="button" class="modal-close-btn">
+          <svg width="28" height="28" class="svg-modal-close"><use href="./image/icons.svg#icon-x-close-1"></use> </svg>
+        </button>
         <p class="modal-title section-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></p>
         <form class="modal-form">
           <div class="modal-field">
             <label for="text" class="label">Name</label>
-            <input type="text" name="name" class="modal-input" id="name" />
+            <div class="modal-input-wrap">
+              <input type="text" name="name" class="modal-input" id="name" />
+              <svg width="24" height="24" class="svg-modal-icon"><use href="./image/icons.svg#icon-user-1"></use> </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="email" class="label">Email</label>
-            <input type="email" name="email" class="modal-input" id="email" />
+            <div class="modal-input-wrap">
+              <input type="email" name="email" class="modal-input" id="email" />
+              <svg width="24" height="24" class="svg-modal-icon"><use href="./image/icons.svg#icon-mail-1"></use> </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="phone" class="label">Phone</label>
-            <input type="tel" name="phone" class="modal-input" id="phone" />
+            <div class="modal-input-wrap">
+              <input type="tel" name="phone" class="modal-input" id="phone" />
+              <svg width="24" height="24" class="svg-modal-icon"><use href="./image/icons.svg#icon-phone-1"></use> </svg>
+            </div>
           </div>
           <button type="submit" class="submit-btn">Send</button>
       </form>
