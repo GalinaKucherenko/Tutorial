@@ -34,19 +34,19 @@
           <ul class="header-soc-list">
             <li class="header-soc-item">
               <a class="header-soc-link" href="" target="_blank" rel="noopener noreferrer">
-             <svg width="24px" height="24px" class="header-soc-icon">
+             <svg width="24" height="24" class="header-soc-icon">
               <use href="./image/icons.svg#icon-instagram"></use>
              </svg>
               </a>
             </li>
             <li class="header-soc-item"><a class="header-soc-link" href="" target="_blank" rel="noopener noreferrer">
-              <svg width="24px" height="24px" class="header-soc-icon">
+              <svg width="24" height="24" class="header-soc-icon">
                 <use href="./image/icons.svg#icon-facebook"></use>
                </svg>
             </a>
             </li>
             <li class="header-soc-item"><a class="header-soc-link" href="" target="_blank" rel="noopener noreferrer">
-              <svg width="24px" height="24px" class="header-soc-icon">
+              <svg width="24" height="24" class="header-soc-icon">
                 <use href="./image/icons.svg#icon-twitter"></use>
                </svg>
             </a>
@@ -261,38 +261,64 @@
     </section>
     </main>
     <footer class="footer">
-      <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
-      <p class="footer-subtitle">Social networks</p>
-      <ul class="footer-soc-list">
-        <li class="footer-soc-item"><a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">instagram</a></li>
-        <li class="footer-soc-item"><a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">fb</a></li>
-        <li class="footer-soc-item"><a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">twitter</a></li>
-      </ul>
-      <p class="footer-subtitle">Contact us</p>
-      <address class="footer-address">
-        <ul class="footer-address-list">
-          <li class="footer-address-item"><a class="footer-address-link" href="tel:+380 (68) 443-94-26">+380 (68) 443-94-26</a></li>
-          <li class="footer-address-item"><a class="footer-address-link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
-        </ul>
-      </address>
-      <nav class="footer-navigation">
-        <ul class="footer-menu-list">
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Home</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">How it’s made?</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Chocolate is loved</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="footer-top">
+          <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
+          <div class="footer-soc">
+            <p class="footer-subtitle">Social networks</p>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-item"><a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" class="footer-soc-icon">
+                  <use href="./image/icons.svg#icon-instagram"></use>
+                 </svg>
+                </a></li>
+              <li class="footer-soc-item"><a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" class="footer-soc-icon">
+                  <use href="./image/icons.svg#icon-facebook"></use>
+                 </svg>
+                </a></li>
+              <li class="footer-soc-item"><a class="footer-soc-link" href="" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" class="footer-soc-icon">
+                  <use href="./image/icons.svg#icon-twitter"></use>
+                 </svg>
+                </a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <p class="footer-subtitle">Contact us</p>
+            <address class="footer-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item"><a class="footer-address-link" href="tel:+380 (68) 443-94-26">+380 (68) 443-94-26</a></li>
+                <li class="footer-address-item"><a class="footer-address-link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <nav class="footer-navigation">
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="">Home</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="">How it’s made?</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form">
+          <input class="footer-input" type="email" name="footer-email" placeholder="Enter your email" />
+          <button class="footer-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
     </footer>
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
-          <svg width="28" height="28" class="svg-modal-close"><use href="./image/icons.svg#icon-x-close-1"></use> </svg>
+          <svg width="28" height="28" class="svg-modal-close"><use href="./image/icons.svg#icon-close"></use> </svg>
         </button>
         <p class="modal-title section-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></p>
         <form class="modal-form">
@@ -316,6 +342,18 @@
               <input type="tel" name="phone" class="modal-input" id="phone" />
               <svg width="24" height="24" class="svg-modal-icon"><use href="./image/icons.svg#icon-phone-1"></use> </svg>
             </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-comment" class="label">Comment</label>
+            <textarea name="user-comment" id="user-comment" class="modal-comment" placeholder="Enter text"></textarea>
+          </div>
+          <div class="modal-field">
+            <input type="checkbox" name="policy" id="policy" class="check-input visually-hidden" />
+            <label for="policy" class="check-label">
+                <span>
+                    <svg width="16" height="16" class="span-icon"><use href="./images/icons.svg#icon-ok"></use></svg>
+                </span>
+                I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
           </div>
           <button type="submit" class="submit-btn">Send</button>
       </form>
