@@ -128,30 +128,45 @@ img {
 .hero-container {
     background-color: rgba(17, 17, 17, 0.60);
     background-image: linear-gradient(rgba(17, 17, 17, 0.0) 0%, rgba(17, 17, 17, 0.40)), 
-    url(../image/chocolate_main.jpg);
+    url(../image/chocolate_main_mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 30px;
-    padding: 380px 40px 40px 40px;
-
+    /* padding: 380px 40px 40px 40px; */
+    padding: 395px 20px 20px 20px;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .hero-container {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.0) 0%, rgba(17, 17, 17, 0.40)),
+        url(../image/chocolate_main_mob.jpg);
+    }
+}
+
 .hero-title {
     color: #fff;
-    font-size: 28px;
+    /* font-size: 28px; */
+    font-size: 20px;
     font-weight: 500;
-    line-height: 1.21;
+    /* line-height: 1.21; */
+    line-height: 1.2;
     letter-spacing: -0.03em;
     margin-bottom: 32px;
-    max-width: 484px;
+    /* max-width: 484px; */
+    max-width: 295px;
 }
 .hero-buttons {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .hero-buy-btn {
-    padding: 14px 40px;
+    /* padding: 14px 40px; */
+    padding: 12px 28px;
     color: #fff;
     font-family: inherit;
     font-size: 14px;
@@ -170,7 +185,8 @@ img {
     border-color: #fff;
 }
 .hero-made-btn {
-    padding: 14px 40px;
+    /* padding: 14px 40px; */
+    padding: 12px 28px;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -186,7 +202,18 @@ img {
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
-    margin-left: auto;
+    /* margin-left: auto; */
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.hero-down-btn::after {
+    content: '';
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #FFF;
 }
 
 /** ----------------------------------- */
@@ -292,14 +319,17 @@ img {
 /** --------------MADE----------------- */
 
 .made {
-    padding-top: 120px;
+    /* padding-top: 120px; */
+    padding-top: 80px;
 }
 
 .made-title {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    margin-bottom: 32px;
 }
 .made-wrap {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 .made-content {
@@ -828,6 +858,26 @@ img {
     .container {
         max-width: 734px;
     }
+
+    /* Hero */
+    .hero-container {
+        padding: 671px 40px 40px 40px;
+        background-image: linear-gradient(rgba(17, 17, 17, 0.0) 0%, rgba(17, 17, 17, 0.40)),
+        url(../image/chocolate_main_tablet.jpg);
+    }
+    .hero-title {
+        font-size: 28px;
+        line-height: 1.21;
+        max-width: 484px;
+    }
+    .hero-buy-btn, .hero-made-btn {
+        padding: 14px 40px;
+    }
+    .hero-down-btn {
+        margin-left: auto;
+        margin-top: unset;
+    }
+
     /* Products */
     .products {
         padding-top: 100px;
@@ -873,11 +923,21 @@ img {
         width: calc((100% - 16px) / 2);
         padding: 56px 16px 16px 16px;
     }
+    .made-wrap {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1166px;
+    }
+
+    /* Hero */
+    .hero-container {
+        padding: 380px 40px 40px 40px;
+        background-image: linear-gradient(rgba(17, 17, 17, 0.0) 0%, rgba(17, 17, 17, 0.40)),
+        url(../image/chocolate_main.jpg);
     }
 
     /* Products */

@@ -55,7 +55,7 @@
         </div>
       </header> -->
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
     <div class="container hero-container">
       <h1 class="hero-title">Treat yourself or a loved one to
       <br>our finest ingredients for a moment
@@ -66,7 +66,7 @@
         <a href="" class="hero-down-btn">scroll down</a>
       </div>
     </div>
-    </section> -->
+    </section>
     <!-- <section class="features">
       <div class="container">
         <h2 class="visually-hidden">features</h2>
@@ -129,11 +129,18 @@
         </ul>
    </div>
     </section> -->
-    <!-- <section class="made">
+    
+    <section class="made">
 <div class="container">
   <h2 class="made-title">HOW IT’S <span>made?</span> </h2>
   <div class="made-wrap">
-    <img src="image/made.jpg" alt="chocolate is whipped with a whisk" width="600" height="400" class="made-img">
+    <picture>
+      <source srcset="./image/made.jpg 1x, ./image/made2x.jpg 2x" media="(min-width: 1200px)">
+      <source srcset="./image/made-tablet.jpg 1x, ./image/made-tablet2x.jpg 2x" media="(min-width: 768px)">
+      <source srcset="./image/made-mob.jpg 1x, ./image/made-mob2x.jpg 2x" media="(max-width: 767px)">
+      <img src="image/made-tablet.jpg" alt="chocolate is whipped with a whisk" width="614" height="400" class="made-img">
+    </picture>
+  
     <div class="made-content">
       <h3 class="made-subtitle">Try our chocolates today and discover the perfect balance of flavor</h3>
       <ul class="made-list">
@@ -157,7 +164,7 @@
     </div>
   </div>
 </div>
-    </section> -->
+    </section>
     <section class="products">
       <h2 class="products-title">Our <span>PRODUCTS</span></h2>
       <ul class="products-list">
